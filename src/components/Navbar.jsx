@@ -13,6 +13,7 @@ export default function Navbar() {
   return (
     <>
       <nav className={scrolled ? 'scrolled' : ''}>
+        <a href="#top" className="wordmark">Sankar Mahha Rajh</a>
         <ul className="nav-links">
           <li><a href="#work">Work</a></li>
           <li><a href="#upscaling">Upscaling</a></li>

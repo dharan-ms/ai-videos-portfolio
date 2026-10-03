@@ -1,0 +1,4 @@
+{
+  "summary": "Increased the hero role badges from 0.68rem to 0.9rem (about 14px) and eased the letter spacing. Checked desktop and a phone-width layout; both badges stay on one row and are not clipped.",
+  "current_status": "Hero badges are slightly larger. Tagline remains large. Dev server is on localhost:5177. Edits remain uncommitted."
+}

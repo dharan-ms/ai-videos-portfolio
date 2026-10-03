@@ -1,0 +1,4 @@
+{
+  "summary": "Raised the hero name to a normal 1rem (16px), removed the cream background, and set the text to white with a light shadow so it stays readable on the artwork. Checked desktop and a phone-width viewport.",
+  "current_status": "Hero name is plain white text at normal size. Dev server is on localhost:5177. Style edits remain uncommitted."
+}

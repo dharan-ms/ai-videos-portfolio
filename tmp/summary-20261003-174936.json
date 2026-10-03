@@ -1,0 +1,4 @@
+{
+  "summary": "Made the hero tagline a bit smaller and stacked it in a narrow column so it reads like the phone layout on desktop too. Font is about 17-23px with a 16.5rem width. Checked wide desktop and a phone viewport; the lines wrap and stay fully visible.",
+  "current_status": "Hero tagline is a short stacked block. Name, title, and badges are unchanged. Dev server is on localhost:5177. Edits remain uncommitted."
+}

@@ -1,0 +1,4 @@
+{
+  "summary": "Removed the visible Telegram username from the footer. The link now shows the icon and the word telegram, and it still opens https://t.me/the_sacred_one.",
+  "current_status": "Footer Telegram label no longer shows the username. Dev server is on localhost:5177. Edits remain uncommitted."
+}

@@ -1,0 +1,4 @@
+{
+  "summary": "Made the hero tagline large (about 41px on a wide screen) and moved it down about 42px below the role badges, keeping the stacked column. Checked desktop and a phone viewport; the wording stays fully visible.",
+  "current_status": "Hero tagline is larger and sits lower. Dev server is on localhost:5177. Edits remain uncommitted."
+}

@@ -1,0 +1,4 @@
+{
+  "summary": "Step one: reduced the hero name Sankar Mahha Rajh from a large clamp (up to 6rem) to a fixed 0.85rem in .hero-name-box. Verified on desktop and a phone-width viewport; the name renders as a small cream label above the role badges. Waiting for the next step.",
+  "current_status": "Hero name font is now small. Dev server is on localhost:5177. Other hero and style edits remain uncommitted."
+}

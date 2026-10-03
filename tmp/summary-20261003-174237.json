@@ -1,0 +1,4 @@
+{
+  "summary": "Enlarged the two hero tagline lines to clamp(1.35rem, 3.6vw, 3.6rem) and removed the narrow width cap so they can grow. On a 1440px screen they render at about 52px on one line each; on a phone they scale down and wrap without clipping.",
+  "current_status": "Hero tagline is large. Name, AI Creative Head title, and compact role badges are unchanged. Dev server is on localhost:5177. Edits remain uncommitted."
+}

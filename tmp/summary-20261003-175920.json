@@ -1,0 +1,4 @@
+{
+  "summary": "Turned the hero tagline into two full lines and placed that block in the vertical middle of the hero image, left-aligned. Checked a wide desktop and a phone viewport; both lines stay complete.",
+  "current_status": "Hero tagline is two lines in the middle of the first image. Name and badges stay at the top. Dev server is on localhost:5177. Edits remain uncommitted."
+}

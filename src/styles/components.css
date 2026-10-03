@@ -97,7 +97,7 @@ nav.scrolled {
 }
 
 .nav-links a {
-  color: rgba(240, 236, 226, 0.6);
+  color: #ffe14a;
   text-decoration: none;
   font-size: 0.82rem;
   font-weight: 500;
@@ -118,14 +118,14 @@ nav.scrolled {
   transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.nav-links a:hover { color: var(--bone); }
+.nav-links a:hover { color: #fff4a8; }
 .nav-links a:hover::after { width: 100%; }
 
 .nav-cta {
   padding: 0.5rem 1.2rem;
-  border: 1px solid rgba(240, 236, 226, 0.12);
+  border: 1px solid #ffe14a;
   border-radius: 2px;
-  color: var(--bone) !important;
+  color: #ffe14a !important;
   transition: all 0.35s ease !important;
 }
 
@@ -207,8 +207,8 @@ nav.scrolled {
   height: 100vh;
   min-height: 700px;
   display: flex;
-  align-items: flex-end;
-  padding-bottom: 7rem;
+  align-items: flex-start;
+  padding-top: 7rem;
   overflow: hidden;
 }
 
@@ -229,10 +229,10 @@ nav.scrolled {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg,
-    rgba(10,10,11,0.15) 0%,
-    rgba(10,10,11,0.45) 35%,
-    rgba(10,10,11,0.7) 65%,
-    rgba(10,10,11,0.9) 100%
+    rgba(10,10,11,0.5) 0%,
+    rgba(10,10,11,0.3) 40%,
+    rgba(10,10,11,0.15) 70%,
+    rgba(10,10,11,0.05) 100%
   );
   z-index: 1;
 }
@@ -241,7 +241,6 @@ nav.scrolled {
   position: relative;
   z-index: 2;
   padding: 0 3rem;
-  max-width: 850px;
 }
 
 .hero-overline {
@@ -279,16 +278,28 @@ nav.scrolled {
 }
 
 .hero-tagline {
-  font-size: 0.95rem;
-  color: rgba(240, 236, 226, 0.5);
-  line-height: 1.8;
-  max-width: 460px;
-  font-weight: 400;
+  position: absolute;
+  left: 3rem;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  margin: 0;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: clamp(0.78rem, 2.45vw, 2.35rem);
+  color: rgba(240, 236, 226, 0.92);
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: none;
+  white-space: nowrap;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
 }
 
 .hero-tagline em {
-  color: rgba(240, 236, 226, 0.75);
-  font-style: italic;
+  color: var(--vermilion);
+  font-style: normal;
 }
 
 .hero-line {
@@ -320,6 +331,7 @@ nav.scrolled {
   nav.scrolled { padding: 0.9rem 2rem; }
 
   .hero-content { padding: 0 2rem; }
+  .hero-tagline { left: 2rem; right: 2rem; }
 
   .upscaling-section,
   .consistency-section,
@@ -363,8 +375,9 @@ nav.scrolled {
   .nav-links { display: none; }
   .hamburger { display: flex; }
 
-  .hero { padding-bottom: 4.5rem; }
+  .hero { padding-top: 4.5rem; }
   .hero-content { padding: 0 1.5rem; }
+  .hero-tagline { left: 1.5rem; right: 1.5rem; }
 
   .upscaling-section,
   .consistency-section,

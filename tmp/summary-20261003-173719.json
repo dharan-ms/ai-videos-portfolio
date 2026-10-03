@@ -1,0 +1,4 @@
+{
+  "summary": "Cleaned the hero into a quiet editorial stack: name, a new AI Creative Head title, smaller role badges, and a lighter tracked tagline. Verified on desktop and a phone-width viewport with no overflow.",
+  "current_status": "Hero identity block is refined and includes AI Creative Head under the name. Dev server is on localhost:5177. Style edits remain uncommitted."
+}

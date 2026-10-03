@@ -1,0 +1,4 @@
+{
+  "summary": "Raised the stacked hero tagline a little, from a 1.45rem cap to 1.75rem (about 28px on a wide screen) and widened the column to 20rem so the same four-line wrap stays. Checked desktop and a phone viewport; the text is fully visible.",
+  "current_status": "Hero tagline is slightly larger and still stacked. Dev server is on localhost:5177. Edits remain uncommitted."
+}

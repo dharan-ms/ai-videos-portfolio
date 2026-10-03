@@ -1,0 +1,4 @@
+{
+  "summary": "Added a Telegram paper-plane icon beside the footer link telegram — @the_sacred_one. Clicking it opens https://t.me/the_sacred_one in a new tab, confirmed by a tab titled Telegram: Contact @the_sacred_one.",
+  "current_status": "Footer Telegram link has an icon and opens the profile. Dev server is on localhost:5177. Edits remain uncommitted."
+}

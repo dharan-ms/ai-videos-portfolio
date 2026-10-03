@@ -101,7 +101,7 @@ nav.scrolled {
 }
 
 .nav-links a {
-  color: rgba(240, 236, 226, 0.6);
+  color: #ffe14a;
   text-decoration: none;
   font-size: 0.82rem;
   font-weight: 500;
@@ -122,14 +122,14 @@ nav.scrolled {
   transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.nav-links a:hover { color: var(--bone); }
+.nav-links a:hover { color: #fff4a8; }
 .nav-links a:hover::after { width: 100%; }
 
 .nav-cta {
   padding: 0.5rem 1.2rem;
-  border: 1px solid rgba(240, 236, 226, 0.12);
+  border: 1px solid #ffe14a;
   border-radius: 3px;
-  color: var(--bone) !important;
+  color: #ffe14a !important;
   transition: all 0.35s ease !important;
 }
 
@@ -211,8 +211,8 @@ nav.scrolled {
   height: 100vh;
   min-height: 700px;
   display: flex;
-  align-items: flex-end;
-  padding-bottom: 7rem;
+  align-items: flex-start;
+  padding-top: 7rem;
   overflow: hidden;
 }
 
@@ -233,10 +233,10 @@ nav.scrolled {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg,
-    rgba(10,10,11,0.2) 0%,
-    rgba(10,10,11,0.5) 40%,
-    rgba(10,10,11,0.75) 75%,
-    rgba(10,10,11,0.92) 100%
+    rgba(10,10,11,0.5) 0%,
+    rgba(10,10,11,0.3) 40%,
+    rgba(10,10,11,0.15) 70%,
+    rgba(10,10,11,0.05) 100%
   );
   z-index: 1;
 }
@@ -245,63 +245,75 @@ nav.scrolled {
   position: relative;
   z-index: 2;
   padding: 0 3rem;
-  max-width: 850px;
 }
 
-.hero-overline {
-  font-size: 15rem;
-  color: var(--vermilion);
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
+.hero-name-box {
+  display: block;
+  background: none;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
   font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  padding: 0;
+  margin: 0;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
 }
 
-.hero-title {
-  margin-bottom: 1.8rem;
-}
-
-.hero-name-line {
-  display: block;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 15rem;
-  font-weight: 400;
-  line-height: 1.0;
-  letter-spacing: -1.5px;
+.hero-role-title {
+  margin: 0.4rem 0 0.95rem;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: var(--bone);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
 }
 
-.hero-role-line {
-  display: block;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 12rem;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--vermilion);
-  margin-top: 0.8rem;
-  letter-spacing: 2px;
+.hero-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.hero-role-badge {
+  display: inline-block;
+  background: var(--vermilion);
+  color: #fff;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.55em 0.85em 0.5em;
+  line-height: 1.2;
 }
 
 .hero-tagline {
-  font-size: 6.5rem;
-  color: rgba(240, 236, 226, 1);
-  line-height: 2.1;
-  line-height: 1.8;
-  max-width: 460px;
-  font-weight: 400;
+  position: absolute;
+  left: 3rem;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  margin: 0;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: clamp(0.78rem, 2.45vw, 2.35rem);
+  color: rgba(240, 236, 226, 0.92);
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: none;
+  white-space: nowrap;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
 }
 
 .hero-tagline em {
-  color: var(--bone);
-  font-style: italic;
-}
-
-.hero-line {
-  width: 50px;
-  height: 1px;
-  background: var(--vermilion);
-  margin-top: 2.2rem;
-  opacity: 0.6;
+  color: var(--vermilion);
+  font-style: normal;
 }
 
 /* ═══════════════ SECTION COMMONS ═══════════════ */
@@ -1015,6 +1027,19 @@ footer {
 
 .footer-links a:hover { color: var(--vermilion); }
 
+.footer-telegram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.footer-telegram svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 /* ═══════════════ LIGHTBOX ═══════════════ */
 .lightbox {
   position: fixed;
@@ -1114,6 +1139,7 @@ footer {
   nav.scrolled { padding: 0.9rem 2rem; }
 
   .hero-content { padding: 0 2rem; }
+  .hero-tagline { left: 2rem; right: 2rem; }
 
   .upscaling-section,
   .consistency-section,
@@ -1160,6 +1186,7 @@ footer {
 
   .hero { padding-bottom: 4.5rem; }
   .hero-content { padding: 0 1.5rem; }
+  .hero-tagline { left: 1.5rem; right: 1.5rem; }
 
   .upscaling-section,
   .consistency-section,
