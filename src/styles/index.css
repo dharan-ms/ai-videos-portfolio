@@ -97,6 +97,7 @@ nav.scrolled {
   gap: 2.2rem;
   list-style: none;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -248,11 +249,11 @@ nav.scrolled {
 }
 
 .hero-overline {
-  font-size: 0.72rem;
+  font-size: 15rem;
   color: var(--vermilion);
   letter-spacing: 5px;
   text-transform: uppercase;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   font-weight: 500;
 }
 
@@ -263,7 +264,7 @@ nav.scrolled {
 .hero-name-line {
   display: block;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3rem, 8vw, 7rem);
+  font-size: 15rem;
   font-weight: 400;
   line-height: 1.0;
   letter-spacing: -1.5px;
@@ -273,24 +274,25 @@ nav.scrolled {
 .hero-role-line {
   display: block;
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
-  font-weight: 300;
+  font-size: 12rem;
+  font-weight: 400;
   font-style: italic;
   color: var(--vermilion);
-  margin-top: 0.6rem;
-  letter-spacing: 1.5px;
+  margin-top: 0.8rem;
+  letter-spacing: 2px;
 }
 
 .hero-tagline {
-  font-size: 0.95rem;
-  color: rgba(240, 236, 226, 0.55);
+  font-size: 6.5rem;
+  color: rgba(240, 236, 226, 1);
+  line-height: 2.1;
   line-height: 1.8;
   max-width: 460px;
   font-weight: 400;
 }
 
 .hero-tagline em {
-  color: rgba(240, 236, 226, 0.8);
+  color: var(--bone);
   font-style: italic;
 }
 
@@ -903,21 +905,36 @@ nav.scrolled {
 .contact-section {
   padding: 7rem 3rem;
   background: var(--ink-light);
+  background-image: url('/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
   border-top: 1px solid rgba(240, 236, 226, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 11, 0.55);
+  z-index: 0;
 }
 
 .contact-inner {
   max-width: 650px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-heading {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
-  font-weight: 300;
+  font-size: clamp(2.2rem, 6vw, 5rem);
+  font-weight: 400;
   line-height: 1.1;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-heading em {
@@ -926,15 +943,15 @@ nav.scrolled {
 }
 
 .contact-text {
-  color: var(--bone-dim);
-  font-size: 0.95rem;
+  color: rgba(240, 236, 226, 0.9);
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
   line-height: 1.8;
   margin-bottom: 2.2rem;
 }
 
 .contact-email {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
   font-weight: 400;
   color: var(--bone);
   text-decoration: none;
@@ -944,6 +961,24 @@ nav.scrolled {
 }
 
 .contact-email:hover {
+  color: var(--vermilion);
+  border-bottom-color: var(--vermilion);
+}
+
+.contact-telegram {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--bone);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(224, 60, 49, 0.3);
+  padding-bottom: 2px;
+  transition: all 0.35s ease;
+  display: inline-block;
+  margin-top: 0.6rem;
+}
+
+.contact-telegram:hover {
   color: var(--vermilion);
   border-bottom-color: var(--vermilion);
 }

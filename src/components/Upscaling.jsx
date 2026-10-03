@@ -14,7 +14,6 @@ export default function Upscaling() {
         </Reveal>
         <Reveal delay={0.15}>
           <div className="upscaling-text">
-            <div className="section-number">01 — High Resolution Upscaling</div>
             <h2 className="upscaling-heading">
               Upscale any footage<br />
               to <em>cinematic quality</em>

@@ -14,8 +14,8 @@ export default function Hero() {
           <span className="hero-role-line">AI Creative Head</span>
         </h1>
         <p className="hero-tagline">
-          Crafting worlds with Intelligence<br />
-          <em>Precision is the differentiator</em>
+          CRAFTING WORLDS WITH INTELLIGENCE<br />
+          <em>PRECISION IS THE DIFFERENTIATOR</em>
         </p>
         <div className="hero-line" />
       </div>

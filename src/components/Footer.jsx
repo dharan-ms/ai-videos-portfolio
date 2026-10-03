@@ -5,10 +5,7 @@ export default function Footer() {
     <footer>
       <div className="footer-copy">&copy; {new Date().getFullYear()} Sankar Mahha Rajh. All rights reserved.</div>
       <div className="footer-links">
-        <a href="#">Instagram</a>
-        <a href="#">X</a>
-        <a href="#">YouTube</a>
-        <a href="#">Behance</a>
+        <a href="https://t.me/the_sacred_one">telegram — @the_sacred_one</a>
       </div>
     </footer>
   )

@@ -17,7 +17,7 @@ function ReelRow({ reel, onOpen, reverse }) {
           className="reel-watch-btn"
           onClick={() => onOpen(reel.video, reel.title, reel.desc)}
         >
-          Watch Reel
+          Watch Montage
         </button>
       </div>
       <div className="showcase-row-visual">
@@ -47,7 +47,6 @@ export default function VideoShowcase({ reels, onOpen }) {
       <div className="showcase-header">
         <Reveal>
           <div>
-            <div className="section-number">02 — Selected Work</div>
             <h2>AI-crafted <em>visual experiments</em></h2>
           </div>
         </Reveal>

@@ -6,7 +6,6 @@ export default function Contact() {
     <section className="contact-section" id="contact">
       <Reveal>
         <div className="contact-inner">
-          <div className="section-number">07 — Contact</div>
           <h2 className="contact-heading">
             Have a project<br />
             in <em>mind</em>?
@@ -15,8 +14,8 @@ export default function Contact() {
             Available for commercial projects, music videos, creative experiments,
             and collaborations. Let&apos;s discuss your vision.
           </p>
-          <a href="mailto:sankarmahharajh@example.com" className="contact-email">
-            sankarmahharajh@example.com
+          <a href="mailto:san.sankarms@gmail.com" className="contact-email">
+            san.sankarms@gmail.com
           </a>
         </div>
       </Reveal>

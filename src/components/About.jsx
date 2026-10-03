@@ -7,7 +7,6 @@ export default function About() {
       <div className="about-inner">
         <Reveal>
           <div className="about-left">
-            <div className="section-number">05 — About</div>
             <div className="about-heading">
               About <em>me</em>
             </div>

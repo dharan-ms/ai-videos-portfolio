@@ -12,7 +12,6 @@ export default function CharacterConsistency() {
             </video>
           </div>
           <div className="consistency-text">
-            <div className="section-number">03 — Character Consistency</div>
             <h2 className="consistency-heading">
               Character consistency<br />
               at its <em>finest</em>

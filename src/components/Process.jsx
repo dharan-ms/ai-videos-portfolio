@@ -6,7 +6,6 @@ export default function Process() {
     <section className="process-section" id="process">
       <Reveal>
         <div className="process-header">
-          <div className="section-number">06 — Process</div>
           <h2>From prompt<br />to <em>production</em></h2>
         </div>
       </Reveal>

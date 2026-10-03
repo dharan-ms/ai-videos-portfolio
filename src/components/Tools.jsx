@@ -14,7 +14,6 @@ export default function Tools() {
   return (
     <section className="tools-section" id="tools">
       <Reveal>
-        <div className="section-number">04 — Context Engineered</div>
         <h2 className="tools-heading">
           Masterful execution with<br />
           <em>these platforms</em>
