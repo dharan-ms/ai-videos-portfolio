@@ -1,0 +1,4 @@
+{
+  "summary": "Changed the top nav from yellow to red, removed the duplicate Sankar Mahha Rajh from the top bar, removed the small paragraph under Intelligence, and made the remaining name and AI generalist a little larger. Work still opens the work section. Checked desktop and a phone viewport.",
+  "current_status": "Nav is red. One name remains in the hero with a slightly larger AI generalist line. The short caption under the headline is gone. Dev server is on localhost:5177. Edits remain uncommitted."
+}

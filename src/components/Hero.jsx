@@ -8,16 +8,14 @@ export default function Hero() {
       </div>
       <div className="hero-overlay" />
       <div className="hero-content">
-        <h1 className="hero-role-title">AI Creative Head</h1>
-        <div className="hero-roles">
-          <span className="hero-role-badge">AI Generalist</span>
-          <span className="hero-role-badge">AI Creative Head</span>
-        </div>
+        <h1 className="hero-name-box">Sankar Mahha Rajh</h1>
+        <p className="hero-role-plain">AI generalist</p>
       </div>
-      <p className="hero-tagline">
-        CRAFTING WORLDS WITH INTELLIGENCE<br />
-        <em>PRECISION IS THE DIFFERENTIATOR</em>
-      </p>
+      <div className="hero-tagline">
+        <span className="hero-statement-craft">Crafting Worlds</span>
+        <span className="hero-statement-with">with</span>
+        <span className="hero-statement-intel">Intelligence</span>
+      </div>
     </section>
   )
 }

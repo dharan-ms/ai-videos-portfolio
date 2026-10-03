@@ -118,7 +118,7 @@ nav.scrolled {
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--vermilion);
+  background: #ffe14a;
   transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -134,8 +134,8 @@ nav.scrolled {
 }
 
 .nav-cta:hover {
-  border-color: var(--vermilion) !important;
-  background: var(--vermilion-soft) !important;
+  border-color: #fff4a8 !important;
+  background: rgba(255, 225, 74, 0.12) !important;
 }
 
 .nav-cta::after { display: none !important; }
@@ -252,7 +252,7 @@ nav.scrolled {
   background: none;
   color: #fff;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.35rem;
+  font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: 0.01em;
@@ -291,29 +291,72 @@ nav.scrolled {
   line-height: 1.2;
 }
 
+.hero-role-plain {
+  margin: 0.45rem 0 0;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 1.28rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: rgba(240, 236, 226, 0.92);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+}
+
 .hero-tagline {
   position: absolute;
   left: 3rem;
   right: 3rem;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 46%;
+  transform: translateY(-42%);
   z-index: 2;
   margin: 0;
-  font-family: 'Instrument Sans', sans-serif;
-  font-size: clamp(0.78rem, 2.45vw, 2.35rem);
-  color: rgba(240, 236, 226, 0.92);
-  line-height: 1.15;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  max-width: none;
-  white-space: nowrap;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: normal;
+  text-transform: none;
 }
 
-.hero-tagline em {
-  color: var(--vermilion);
+.hero-statement-craft,
+.hero-statement-with,
+.hero-statement-intel {
+  font-family: 'Cormorant Garamond', serif;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+}
+
+.hero-statement-craft {
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5.6vw, 5.1rem);
+  line-height: 0.92;
+  color: #d24b42;
+}
+
+.hero-statement-with {
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.65rem, 3.2vw, 2.9rem);
+  line-height: 1;
+  color: #f4f0e6;
+  margin: 0.08em 0 0 0.06em;
+}
+
+.hero-statement-intel {
   font-style: normal;
+  font-weight: 400;
+  font-size: clamp(3.1rem, 7.2vw, 6.4rem);
+  line-height: 0.88;
+  letter-spacing: -0.025em;
+  color: #f7f4ec;
+}
+
+.hero-statement-note {
+  max-width: 26rem;
+  margin: 1.15rem 0 0;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(240, 236, 226, 0.72);
 }
 
 /* ═══════════════ SECTION COMMONS ═══════════════ */
@@ -1036,8 +1079,12 @@ footer {
 .footer-telegram svg {
   width: 15px;
   height: 15px;
-  fill: currentColor;
+  fill: #2AABEE;
   flex-shrink: 0;
+}
+
+.footer-telegram:hover svg {
+  fill: #2AABEE;
 }
 
 /* ═══════════════ LIGHTBOX ═══════════════ */
